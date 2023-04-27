@@ -1,0 +1,99 @@
+.card {
+    background-color: white;
+    box-shadow: 0 4px 4px;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+
+.card__descricao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.6em;
+}
+
+.descricao__titulo-terciario {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--amarelo);
+}
+
+.descricao__titulo-principal {
+    font-weight: 700;
+    font-size: 18px;
+    Line-height: 27px;
+    color: #002F52;
+    margin: 0.5em 0;
+}
+
+.descricao__titulo-secundario {
+    font-weight: 700;
+    font-size: 16px;
+    color: #002F52;
+    margin: 0.6em 0;
+}
+
+.descricao__paragrafo {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.descricao__paragrafo-secundario {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.img__descricao {
+    height: 188px;
+}
+
+.img__descricao-secundario {
+    height: 150px;
+    width: 150px;
+}
+
+
+.card__botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.card__link {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    text-decoration: none;
+    background-color: var(--amarelo);
+    padding: 0.9em 1.9em;
+    margin-top: 0.6em;
+}
+
+.botoes__item {
+    margin: 0 0.5em;
+}
+
+.card__estrelas {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-bottom: 0.5rem;
+}
+
+
+.material-symbols-outlined {
+    color: red;
+    vertical-align: bottom;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
