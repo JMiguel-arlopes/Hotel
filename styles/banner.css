@@ -1,0 +1,43 @@
+.banner {
+    background-image: var(--gradiente-azul);
+    text-align: center;
+    color: var(--branco-principal);
+    box-sizing: border-box;
+    padding: 2.5em 2em;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__paragrafo {
+    padding: 1em;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.banner__input {
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 24px;
+    border: 1px var(--branco-principal) solid;
+    padding: 0.6em 1em; 
+    color: var(--ciano-claro);
+    
+}
+
+.banner__input::placeholder {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--branco-principal);
+    background-image: url(../img/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 2em;
+    
+}
