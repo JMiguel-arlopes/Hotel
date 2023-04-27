@@ -1,0 +1,8 @@
+.rodape {
+    border-top: 2px black solid;
+    background-color: var(--branco-principal);
+}
+
+.rodape__titulo {
+    padding: 1em;
+}
