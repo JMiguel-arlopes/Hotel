@@ -1,0 +1,66 @@
+.cabecalho {
+    background-color: var(--branco-principal);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cabecalho__menu-hotel {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabecalho__menu-hotel-aberto {
+    background-image: url(../img/Menu\ Aberto.svg), var(--gradiente-azul);
+}
+
+.lista-menu {
+    display: none;
+    width: 60vw;
+    position: absolute;
+    top: 100%;
+    background-color: var(--ciano-principal)
+}
+
+.lista-menu__aberto {
+    display: block;
+    animation: translate .35s linear 1;
+}
+
+.lista-menu__titulo {
+    padding: 1em;
+    color: rgb(255, 0, 43);
+    font-weight: 700;
+    
+}
+
+.lista-menu__item {
+    padding: 1em;
+    
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    background-image: var(--gradiente-azul);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+}
+
+.header__imagem {
+    padding: 1em;
+}
+
+
+
+
+@keyframes translate{
+    0% {
+        transform: translate3d(-60vw, 0, 0);
+    }
+}
