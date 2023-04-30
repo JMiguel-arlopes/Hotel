@@ -9,12 +9,14 @@
 
 :root {
     --fonte: 'Poppins', sans-serif;
+    --fonte-secundaria:'Josefin Sans', sans-serif;
     --ciano-principal: #e2eafd;
     --ciano-claro: #eaf2ff;
     --branco-principal: #E5E5E5;
     --gradiente-azul: linear-gradient(to right, #002F52, #326589);
     --azul: #002F52;
     --amarelo: #eb9d00;
+    --preto: #000000;
 
 }
 
