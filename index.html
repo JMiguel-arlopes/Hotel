@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo.png">
 
     <link rel="stylesheet" href="styles/reset.css">
@@ -22,31 +23,68 @@
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Hóteis</a>
+                    <a href="#" class="lista-menu__link">Favoritos</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Passagens</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Reservas</a>
+                    <a href="#" class="lista-menu__link">Região</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Minha carteira</a>
+                    <a href="#" class="lista-menu__link">Minhas reservas</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Configurações</a>
                 </li>
             </ul>
             <a href="#"><img src="img/logo.png" alt="Logo" class="header__imagem-logo"></a>
+            <h2 class="cabecalho__titulo-logo"><b class="titulo-logo--negrito">Dream</b>Hotel</h2>
         </div>
 
-        <div>
-            <a href="#"><img src="img/Favoritos.svg" alt="favoritos" class="header__imagem"></a>
-            <a href="#"><img src="img/Compras.svg" alt="sacolinha" class="header__imagem"></a>
-            <a href="#"><img src="img/Usuario.svg" alt="perfil" class="header__imagem"></a>
+        <div class="container_central">
+            <ul class="opções">
+                <li class="opção__item item__categorias">
+                    <p class="opção__link categorias">Categorias</p>
+                </li>
+                <li class="opção__item">
+                    <a href="#" class="opção__link">Favoritos</a>
+                </li>
+                <li class="opção__item">
+                    <a href="#" class="opção__link">Minhas reservas</a>
+                </li>
+            </ul>
+            <ul class="lista-menu--tablet">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Favoritos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Passagens</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Região</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Minhas reservas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Configurações</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="favoritos" class="header__imagem hide"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="sacolinha" class="header__imagem">
+                <p class="container__texto">Minha Sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="perfil" class="header__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
     </header>
-
 
     <main>
         <section class="banner">
@@ -57,108 +95,111 @@
 
         <section class="carrosel">
             <h2 class="carrosel__titulo">Melhores Promoções</h2>
+            <div class="container__carrosel">
+                <div class="swiper">
 
-            <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/quarto_1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_6.png" alt=""></div>
+                    </div>
 
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide"><img src="img/quarto_1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_3.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_4.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_5.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_6.png" alt=""></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-
-            <div class="card">
-                <!-- linha 1 -->
-                <div class="card__descricao">
-                    <!-- coluna 1 -->
-                    <div class="descricao">
-                        <h3 class="descricao__titulo-terciario">Talvez você também possa ter interesse por...</h3>
-                        <h2 class="descricao__titulo-principal">Passagens aérias</h2>
-                        <p class="descricao__paragrafo">Viajar para os lugares mais bonitos e visitados no mundo.</p>
+                <div class="card">
+                    <!-- linha 1 -->
+                    <div class="card__descricao">
+                        <!-- coluna 1 -->
+                        <div class="descricao">
+                            <h3 class="descricao__titulo-terciario">Talvez você também possa ter interesse por...</h3>
+                            <h2 class="descricao__titulo-principal">Passagens aérias</h2>
+                            <p class="descricao__paragrafo">Viajar para os lugares mais bonitos e visitados no mundo.</p>
+                        </div>
+                        <!-- coluna 2 -->
+                        <img src="img/viagem-aviao-cut.jpg" alt="viagem de avião" class="img__descricao">
                     </div>
-                    <!-- coluna 2 -->
-                    <img src="img/viagem-aviao-cut.jpg" alt="viagem de avião" class="img__descricao">
-                </div>
 
-                <!-- linha 2 -->
-                <div class="card__botoes">
-                    <!-- coluna 1 -->
-                    <div class="botoes">
-                        <a href="#"><img src="img/Favoritos.svg" alt="favoritos" class="botoes__item"></a>
-                        <a href="#"><img src="img/Compras.svg" alt="sacolinha" class="botoes__item"></a>
+                    <!-- linha 2 -->
+                    <div class="card__botoes">
+                        <!-- coluna 1 -->
+                        <div class="botoes">
+                            <a href="#"><img src="img/Favoritos.svg" alt="favoritos" class="botoes__item"></a>
+                            <a href="#"><img src="img/Compras.svg" alt="sacolinha" class="botoes__item"></a>
+                        </div>
+                        <!-- coluna 2 -->
+                        <a href="#" class="card__link">Saiba mais</a>
                     </div>
-                    <!-- coluna 2 -->
-                    <a href="#" class="card__link">Saiba mais</a>
                 </div>
             </div>
         </section>
 
         <section  class="carrosel">
             <h2 class="carrosel__titulo">Mais Visitados</h2>
-            <div class="swiper">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+            <div class="container__carrosel">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide"><img src="img/quarto_10.png" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_11.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_12.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_13.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_14.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_15.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_16.png" alt=""></div>
-                  <div class="swiper-slide"><img src="img/quarto_17.jpg" alt=""></div>
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="card">
-                <!-- linha 1 -->
-                <div class="card__descricao">
-                    <!-- coluna 1 -->
-                    <div class="descricao">
-                        <ul class="card__estrelas">
-                            <li><img src="img/Star 1.svg" alt="estrela"></li>
-                            <li><img src="img/Star 1.svg" alt="estrela"></li>
-                            <li><img src="img/Star 1.svg" alt="estrela"></li>
-                            <li><img src="img/Star 1.svg" alt="estrela"></li>
-                            <li><img src="img/Star 1.svg" alt="estrela"></li>
-                        </ul>
-                        <h3 class="descricao__titulo-terciario">Viagem do ano</h3>
-                        <h2 class="descricao__titulo-secundario">Svalbard - Noruega</h2>
-                        <p class="descricao__paragrafo-secundario">Vai uma Aurora Boreal?<br> Frio + Belezas = <span class="material-symbols-outlined">
-                            favorite
-                        </span></p>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/quarto_10.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_11.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_12.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_13.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_14.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_15.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_16.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/quarto_17.jpg" alt=""></div>
                     </div>
 
-                    <!-- coluna 2 -->
-                    <img src="img/aurora.jpg" alt="viagem de avião" class="img__descricao-secundario">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <!-- linha 2 -->
-                <div class="card__botoes">
-                    <!-- coluna 1 -->
-                    <div class="botoes">
-                        <a href="#"><img src="img/Favoritos.svg" alt="favoritos" class="botoes__item"></a>
-                        <a href="#"><img src="img/Compras.svg" alt="sacolinha" class="botoes__item"></a>
+                <div class="card">
+                    <!-- linha 1 -->
+                    <div class="card__descricao">
+                        <!-- coluna 1 -->
+                        <div class="descricao">
+                            <ul class="card__estrelas">
+                                <li><img src="img/Star 1.svg" alt="estrela"></li>
+                                <li><img src="img/Star 1.svg" alt="estrela"></li>
+                                <li><img src="img/Star 1.svg" alt="estrela"></li>
+                                <li><img src="img/Star 1.svg" alt="estrela"></li>
+                                <li><img src="img/Star 1.svg" alt="estrela"></li>
+                            </ul>
+                            <h3 class="descricao__titulo-terciario">Viagem do ano</h3>
+                            <h2 class="descricao__titulo-secundario">Svalbard - Noruega</h2>
+                            <p class="descricao__paragrafo-secundario">Vai uma Aurora Boreal?<br> Frio + Belezas = <span class="material-symbols-outlined">
+                                favorite
+                            </span></p>
+                        </div>
+
+                        <!-- coluna 2 -->
+                        <img src="img/aurora.jpg" alt="viagem de avião" class="img__descricao-secundario">
                     </div>
-                    <!-- coluna 2 -->
-                    <a href="#" class="card__link">Saiba mais</a>
+                    <!-- linha 2 -->
+                    <div class="card__botoes">
+                        <!-- coluna 1 -->
+                        <div class="botoes">
+                            <a href="#"><img src="img/Favoritos.svg" alt="favoritos" class="botoes__item"></a>
+                            <a href="#"><img src="img/Compras.svg" alt="sacolinha" class="botoes__item"></a>
+                        </div>
+                        <!-- coluna 2 -->
+                        <a href="#" class="card__link">Saiba mais</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,8 +235,10 @@
         </section>
 
         <section class="contato">
-            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de hotéis, novas viagens, promoções e outros.</p>
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Atualizações de hotéis, novas viagens, promoções e outros.</p>
+            </div>
             <input type="text" class="contato__email" placeholder="Cadastre seu e-mail">
         </section>
     </main>
